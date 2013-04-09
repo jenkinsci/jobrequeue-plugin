@@ -8,7 +8,7 @@
 
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>requeue-job</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>hpi</packaging>
 
   <!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
@@ -25,4 +25,7 @@
       <url>http://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
+  <name>Requeue Job Plugin</name>
+  <description>This plugin adds an option to jobs to allow them to be requeued in the case of failure.  The option is enabled/disabled at the project configuration page.</description>
+  <url>https://github.com/jenkinsci/jobrequeue-plugin</url>
 </project>

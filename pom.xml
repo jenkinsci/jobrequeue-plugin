@@ -7,7 +7,7 @@
   </parent>
 
   <groupId>org.jenkins-ci.plugins</groupId>
-  <artifactId>requeue-job</artifactId>
+  <artifactId>jobrequeue</artifactId>
   <version>1.0</version>
   <packaging>hpi</packaging>
 
@@ -19,6 +19,20 @@
     </repository>
   </repositories>
 
+  <scm>
+    <connection>scm:git:ssh://github.com/jenkinsci/jobrequeue-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:jenkinsci/jobrequeue-plugin.git</developerConnection>
+    <url>https://github.com/jenkinsci/jobrequeue-plugin</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>bwall</id>
+      <name>Brian Wallace</name>
+      <email>bwall@openbwall.com</email>
+    </developer>
+  </developers>
+
   <pluginRepositories>
     <pluginRepository>
       <id>repo.jenkins-ci.org</id>
@@ -27,5 +41,5 @@
   </pluginRepositories>
   <name>Requeue Job Plugin</name>
   <description>This plugin adds an option to jobs to allow them to be requeued in the case of failure.  The option is enabled/disabled at the project configuration page.</description>
-  <url>https://github.com/jenkinsci/jobrequeue-plugin</url>
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/JobRequeue-Plugin</url>
 </project>

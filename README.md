@@ -7,3 +7,6 @@ Usage
 =====
 
 To use this plugin, you just need to install it, then click the check box in the project properties to requeue jobs.  If the server/slave that the job is running on fails for any reason, the job will be added to the queue again to ensure that it is run.
+
+Here is a screen shot of a project configured to requeue jobs that failed due to slaves going down.
+![](https://wiki.jenkins-ci.org/download/attachments/66848950/oie_17201453TILJZs26.png)

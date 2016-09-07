@@ -36,7 +36,8 @@ public class RequeueJobProperty extends JobProperty<AbstractProject<?, ?>> {
     		if(comp.isOffline())
     		{
     			// If the current computer is offline
-    			Queue.getInstance().schedule(build.getProject());
+    			// Schedule a new build with the same actions
+    			Queue.getInstance().schedule(build.getProject(), 0, build.getActions());
     			return true;
     		}
 

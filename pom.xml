@@ -42,4 +42,14 @@
   <name>Requeue Job Plugin</name>
   <description>This plugin adds an option to jobs to allow them to be requeued in the case of failure.  The option is enabled/disabled at the project configuration page.</description>
   <url>https://wiki.jenkins-ci.org/display/JENKINS/JobRequeue-Plugin</url>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
